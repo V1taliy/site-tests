@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HTTPS://PRE.TOROPTION.COM" verbose="1">
+    <test name="CREATE LEAD FROM MAIN PAGE AND REGISTRATION CUSTOMER">
+        <classes>
+            <class name="com.toroption.pre.tests.CreateLeadFromMainPageAndRegistration"/>
+        </classes>
+    </test>
+    <test name="TRYING REGISTRATION CUSTOMER WITH EMAIL WHICH ALREADY USED">
+        <classes>
+            <class name="com.toroption.pre.tests.RegistrationEmailWhichUsed"/>
+        </classes>
+    </test>
+</suite>
+

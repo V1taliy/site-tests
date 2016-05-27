@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="globalSuite" duration-ms="0" started-at="2016-05-27T12:24:01Z" finished-at="2016-05-27T12:24:01Z">
+    <groups>
+    </groups>
+  </suite> <!-- globalSuite -->
+  <suite name="HTTPS://PRE.TOROPTION.COM" duration-ms="116991" started-at="2016-05-27T12:22:04Z" finished-at="2016-05-27T12:24:00Z">
+    <groups>
+    </groups>
+    <test name="CREATE LEAD FROM MAIN PAGE AND REGISTRATION CUSTOMER" duration-ms="50366" started-at="2016-05-27T12:22:04Z" finished-at="2016-05-27T12:22:54Z">
+      <class name="com.toroption.pre.tests.CreateLeadFromMainPageAndRegistration">
+        <test-method status="PASS" signature="fillLeadForm()[pri:1, instance:com.toroption.pre.tests.CreateLeadFromMainPageAndRegistration@865dd6]" name="fillLeadForm" duration-ms="38860" started-at="2016-05-27T15:22:04Z" finished-at="2016-05-27T15:22:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillLeadForm -->
+        <test-method status="PASS" signature="fillOpenAccountForm()[pri:2, instance:com.toroption.pre.tests.CreateLeadFromMainPageAndRegistration@865dd6]" name="fillOpenAccountForm" duration-ms="11497" started-at="2016-05-27T15:22:42Z" finished-at="2016-05-27T15:22:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillOpenAccountForm -->
+      </class> <!-- com.toroption.pre.tests.CreateLeadFromMainPageAndRegistration -->
+    </test> <!-- CREATE LEAD FROM MAIN PAGE AND REGISTRATION CUSTOMER -->
+    <test name="TRYING REGISTRATION CUSTOMER WITH EMAIL WHICH ALREADY USED" duration-ms="66613" started-at="2016-05-27T12:22:54Z" finished-at="2016-05-27T12:24:00Z">
+      <class name="com.toroption.pre.tests.RegistrationEmailWhichUsed">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.toroption.pre.tests.RegistrationEmailWhichUsed@3a6bb9bf]" name="startBrowser" is-config="true" duration-ms="8639" started-at="2016-05-27T15:21:55Z" finished-at="2016-05-27T15:22:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="fillLeadForm()[pri:1, instance:com.toroption.pre.tests.RegistrationEmailWhichUsed@3a6bb9bf]" name="fillLeadForm" duration-ms="63935" started-at="2016-05-27T15:22:54Z" finished-at="2016-05-27T15:23:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillLeadForm -->
+        <test-method status="PASS" signature="fillOpenAccountForm()[pri:2, instance:com.toroption.pre.tests.RegistrationEmailWhichUsed@3a6bb9bf]" name="fillOpenAccountForm" duration-ms="2674" started-at="2016-05-27T15:23:58Z" finished-at="2016-05-27T15:24:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillOpenAccountForm -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.toroption.pre.tests.RegistrationEmailWhichUsed@3a6bb9bf]" name="quitBrowser" is-config="true" duration-ms="635" started-at="2016-05-27T15:24:00Z" finished-at="2016-05-27T15:24:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.toroption.pre.tests.RegistrationEmailWhichUsed -->
+    </test> <!-- TRYING REGISTRATION CUSTOMER WITH EMAIL WHICH ALREADY USED -->
+  </suite> <!-- HTTPS://PRE.TOROPTION.COM -->
+</testng-results>

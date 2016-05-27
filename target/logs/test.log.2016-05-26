@@ -1,0 +1,80 @@
+2016-05-26 16:13:19 ConfigData [INFO] - created properties
+2016-05-26 16:13:19 ConfigData [INFO] - created map properties
+2016-05-26 16:13:19 AbstractPage [INFO] - start open page
+2016-05-26 16:13:24 AbstractPage [INFO] - page open successful
+2016-05-26 16:13:24 Fixture [INFO] - start test suit execution
+2016-05-26 16:13:24 WebElementsActions [INFO] - click element < loginFieldInput >
+2016-05-26 16:13:24 WebElementsActions [INFO] - clear element < loginFieldInput >
+2016-05-26 16:13:25 WebElementsActions [INFO] - input < loginFieldInput > and send < firstName >
+2016-05-26 16:13:26 Fixture [INFO] - tests suite execution completed
+2016-05-26 16:14:36 ConfigData [INFO] - created properties
+2016-05-26 16:14:36 ConfigData [INFO] - created map properties
+2016-05-26 16:14:36 AbstractPage [INFO] - start open page
+2016-05-26 16:14:41 AbstractPage [INFO] - page open successful
+2016-05-26 16:14:41 Fixture [INFO] - start test suit execution
+2016-05-26 16:14:41 WebElementsActions [INFO] - click element < firstNameFieldInput >
+2016-05-26 16:15:12 Fixture [INFO] - tests suite execution completed
+2016-05-26 16:20:15 ConfigData [INFO] - created properties
+2016-05-26 16:20:15 ConfigData [INFO] - created map properties
+2016-05-26 16:20:15 AbstractPage [INFO] - start open page
+2016-05-26 16:20:20 AbstractPage [INFO] - page open successful
+2016-05-26 16:20:20 Fixture [INFO] - start test suit execution
+2016-05-26 16:20:20 WebElementsActions [INFO] - click element < firstNameFieldInput >
+2016-05-26 16:20:51 Fixture [INFO] - tests suite execution completed
+2016-05-26 16:26:10 ConfigData [INFO] - created properties
+2016-05-26 16:26:10 ConfigData [INFO] - created map properties
+2016-05-26 16:26:10 AbstractPage [INFO] - start open page
+2016-05-26 16:26:15 AbstractPage [INFO] - page open successful
+2016-05-26 16:26:15 Fixture [INFO] - start test suit execution
+2016-05-26 16:26:15 WebElementsActions [INFO] - click element < firstNameFieldInput >
+2016-05-26 16:27:28 ConfigData [INFO] - created properties
+2016-05-26 16:27:28 ConfigData [INFO] - created map properties
+2016-05-26 16:27:28 AbstractPage [INFO] - start open page
+2016-05-26 16:27:32 AbstractPage [INFO] - page open successful
+2016-05-26 16:27:32 Fixture [INFO] - start test suit execution
+2016-05-26 16:27:32 WebElementsActions [INFO] - click element < firstNameFieldInput >
+2016-05-26 16:27:32 WebElementsActions [INFO] - clear element < firstNameFieldInput >
+2016-05-26 16:27:33 WebElementsActions [INFO] - input < firstNameFieldInput > and send < testFirstName >
+2016-05-26 16:27:33 Fixture [INFO] - tests suite execution completed
+2016-05-26 16:29:05 ConfigData [INFO] - created properties
+2016-05-26 16:29:05 ConfigData [INFO] - created map properties
+2016-05-26 16:29:05 AbstractPage [INFO] - start open page
+2016-05-26 16:29:09 AbstractPage [INFO] - page open successful
+2016-05-26 16:29:09 Fixture [INFO] - start test suit execution
+2016-05-26 16:29:10 WebElementsActions [INFO] - click element < firstNameFieldInput >
+2016-05-26 16:29:10 WebElementsActions [INFO] - clear element < firstNameFieldInput >
+2016-05-26 16:29:11 WebElementsActions [INFO] - input < firstNameFieldInput > and send < testFirstName >
+2016-05-26 16:29:12 Fixture [INFO] - tests suite execution completed
+2016-05-26 16:30:56 ConfigData [INFO] - created properties
+2016-05-26 16:30:56 ConfigData [INFO] - created map properties
+2016-05-26 16:30:56 AbstractPage [INFO] - start open page
+2016-05-26 16:31:00 AbstractPage [INFO] - page open successful
+2016-05-26 16:31:00 Fixture [INFO] - start test suit execution
+2016-05-26 16:31:00 WebElementsActions [INFO] - click element < firstNameFieldInput >
+2016-05-26 16:31:00 WebElementsActions [INFO] - clear element < firstNameFieldInput >
+2016-05-26 16:31:02 WebElementsActions [INFO] - input < firstNameFieldInput > and send < firstName >
+2016-05-26 16:31:02 Fixture [INFO] - tests suite execution completed
+2016-05-26 16:38:29 ConfigData [INFO] - created properties
+2016-05-26 16:38:29 ConfigData [INFO] - created map properties
+2016-05-26 16:38:29 AbstractPage [INFO] - start open page
+2016-05-26 16:38:34 AbstractPage [INFO] - page open successful
+2016-05-26 16:38:34 Fixture [INFO] - start test suit execution
+2016-05-26 16:38:35 WebElementsActions [INFO] - click element < firstNameFieldInput >
+2016-05-26 16:38:35 WebElementsActions [INFO] - clear element < firstNameFieldInput >
+2016-05-26 16:38:37 WebElementsActions [INFO] - input < firstNameFieldInput > and send < firstName >
+2016-05-26 16:38:39 WebElementsActions [INFO] - click element < lastNameFieldInput >
+2016-05-26 16:38:40 WebElementsActions [INFO] - clear element < lastNameFieldInput >
+2016-05-26 16:38:40 WebElementsActions [INFO] - input < lastNameFieldInput > and send < lastName >
+2016-05-26 16:38:41 Fixture [INFO] - tests suite execution completed
+2016-05-26 16:39:44 ConfigData [INFO] - created properties
+2016-05-26 16:39:44 ConfigData [INFO] - created map properties
+2016-05-26 16:39:44 AbstractPage [INFO] - start open page
+2016-05-26 16:39:49 AbstractPage [INFO] - page open successful
+2016-05-26 16:39:49 Fixture [INFO] - start test suit execution
+2016-05-26 16:39:49 WebElementsActions [INFO] - click element < firstNameFieldInput >
+2016-05-26 16:39:50 WebElementsActions [INFO] - clear element < firstNameFieldInput >
+2016-05-26 16:39:51 WebElementsActions [INFO] - input < firstNameFieldInput > and send < firstName >
+2016-05-26 16:39:54 WebElementsActions [INFO] - click element < lastNameFieldInput >
+2016-05-26 16:39:55 WebElementsActions [INFO] - clear element < lastNameFieldInput >
+2016-05-26 16:39:55 WebElementsActions [INFO] - input < lastNameFieldInput > and send < lastName >
+2016-05-26 16:39:56 Fixture [INFO] - tests suite execution completed
