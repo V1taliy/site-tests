@@ -14,6 +14,9 @@ public class RegistrationEmailWhichUsed extends Fixture{
 
 
     @Test(priority = 1)
+    /**
+     * The filling lead form, with email which was used earlier
+     */
     public void fillLeadForm() {
         toroption.mainPage.clickAndInputFirstName(NAME);
         toroption.mainPage.clickAndInputLastName(SURNAME);
@@ -24,6 +27,9 @@ public class RegistrationEmailWhichUsed extends Fixture{
     }
 
     @Test(priority = 2)
+    /**
+     * Check alert with needed message
+     */
     public void fillOpenAccountForm() {
         toroption.openAccount.clickAndInputPassField(PASS);
         toroption.openAccount.clickAndInputPassVerificationField(PASS);

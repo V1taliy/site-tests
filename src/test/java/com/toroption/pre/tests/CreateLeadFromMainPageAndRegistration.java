@@ -23,11 +23,19 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
 
     @Test (priority = 1)
     public void fillLeadForm() {
+
+        /**
+         * Generate random email
+         */
         driver.get("https://dropmail.me");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         WebElement emeilField = driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/h2/span[1]"));
         String mail = emeilField.getText();
         driver.close();
+
+        /**
+         * The filling lead form and the checking transmitted data from lead
+         */
         toroption.mainPage.clickAndInputFirstName(NAME);
         toroption.mainPage.clickAndInputLastName(SURNAME);
         toroption.mainPage.clickAndInputEmail(mail);
@@ -37,6 +45,9 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
     }
 
     @Test(priority = 2)
+    /**
+     * The filling of remaining fields and registration new user
+     */
     public void fillOpenAccountForm() {
         toroption.openAccount.clickAndInputPassField(PASS);
         toroption.openAccount.clickAndInputPassVerificationField(PASS);
