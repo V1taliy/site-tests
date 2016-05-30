@@ -7,6 +7,7 @@ import utils.WebDriverWrapper;
 
 
 public class OpenAccount extends AbstractPage {
+
     private static final Logger log = Logger.getLogger(OpenAccount.class);
     public OpenAccount(WebDriverWrapper driverWrapper){
         super(driverWrapper);

@@ -1,16 +1,23 @@
 package com.toroption.pre.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
+import utils.ScreenShot;
+
+import java.io.IOException;
 
 public class RegistrationEmailWhichUsed extends Fixture{
-    public static final String NAME = PropertyLoader.loadProperty("firstName");
-    public static final String SURNAME = PropertyLoader.loadProperty("lastName");
-    public static final String PHONE = PropertyLoader.loadProperty("phone");
-    public static final String PASS = PropertyLoader.loadProperty("user.PASS");
-    public static final String CAPTCHA = PropertyLoader.loadProperty("captcha");
-    public static final String EMAIL = PropertyLoader.loadProperty("email");
+    private static final String NAME = PropertyLoader.loadProperty("firstName");
+    private static final String SURNAME = PropertyLoader.loadProperty("lastName");
+    private static final String PHONE = PropertyLoader.loadProperty("phone");
+    private static final String PASS = PropertyLoader.loadProperty("user.PASS");
+    private static final String CAPTCHA = PropertyLoader.loadProperty("captcha");
+    private static final String EMAIL = PropertyLoader.loadProperty("email");
+    private static final String DEFAULT_FILE_PATH = PropertyLoader.loadProperty("screenshot.folder");
+    private static final String DEFAULT_FILE_NAME = PropertyLoader.loadProperty("screenshot.name");
+    private static final String DEFAULT_FILE_FORMAT = PropertyLoader.loadProperty("screenshot.format");
 
 
     @Test(priority = 1)
@@ -38,4 +45,8 @@ public class RegistrationEmailWhichUsed extends Fixture{
         Assert.assertTrue(toroption.openAccount.errorForm());
     }
 
+    @AfterMethod
+    public void takeScreenShot() throws IOException {
+        ScreenShot.quicklyScreenShot(driverWrapper, DEFAULT_FILE_PATH, DEFAULT_FILE_NAME, DEFAULT_FILE_FORMAT);
+    }
 }

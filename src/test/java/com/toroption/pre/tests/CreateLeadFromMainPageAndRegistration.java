@@ -6,18 +6,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
+import utils.ScreenShot;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class CreateLeadFromMainPageAndRegistration extends Fixture {
 
-    public static final String NAME = PropertyLoader.loadProperty("firstName");
-    public static final String SURNAME = PropertyLoader.loadProperty("lastName");
-    public static final String PHONE = PropertyLoader.loadProperty("phone");
-    public static final String PASS = PropertyLoader.loadProperty("user.PASS");
-    public static final String CAPTCHA = PropertyLoader.loadProperty("captcha");
+    private static final String NAME = PropertyLoader.loadProperty("firstName");
+    private static final String SURNAME = PropertyLoader.loadProperty("lastName");
+    private static final String PHONE = PropertyLoader.loadProperty("phone");
+    private static final String PASS = PropertyLoader.loadProperty("user.PASS");
+    private static final String CAPTCHA = PropertyLoader.loadProperty("captcha");
+    private static final String DEFAULT_FILE_PATH = PropertyLoader.loadProperty("screenshot.folder");
+    private static final String DEFAULT_FILE_NAME = PropertyLoader.loadProperty("screenshot.name");
+    private static final String DEFAULT_FILE_FORMAT = PropertyLoader.loadProperty("screenshot.format");
+
 
     WebDriver driver = new FirefoxDriver();
 
@@ -55,5 +62,9 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
         toroption.openAccount.clickLoginButton();
         Assert.assertTrue(toroption.mainPage.isUserLogIn());
         toroption.mainPage.logout();
+    }
+    @AfterMethod
+    public void takeScreenShot() throws IOException {
+        ScreenShot.quicklyScreenShot(driverWrapper, DEFAULT_FILE_PATH, DEFAULT_FILE_NAME, DEFAULT_FILE_FORMAT);
     }
 }

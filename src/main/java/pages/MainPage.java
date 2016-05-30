@@ -60,16 +60,6 @@ public class MainPage extends AbstractPage {
         }
     }
 
-    public void clickAndInputCountry(String countryData) {
-        try {
-            web.clickElement("chooseCountry");
-            isBeCleaned("chooseCountry");
-//            web.input("chooseCountry", countryData);
-            web.clickElement("turkey");
-        } catch (NoSuchElementException e) {
-            e.printStackTrace();
-        }
-    }
     public void clickAndInputPhone(String phoneData) {
         try {
             web.clickElement("phoneFieldInput");
