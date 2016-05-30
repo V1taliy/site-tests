@@ -15,7 +15,6 @@ public class Toroption {
         web = new WebElementsActions(driverWrapper);
         mainPage = new MainPage(driverWrapper);
         openAccount = new OpenAccount(driverWrapper);
-
     }
 
 }
