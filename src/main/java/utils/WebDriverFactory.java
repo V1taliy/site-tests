@@ -26,6 +26,8 @@ public class WebDriverFactory {
         if (FIREFOX.equals(browserName)) {
             driverWrapper = new WebDriverWrapper(new FirefoxDriver());
         } else if (CHROME.equals(browserName)) {
+            System.setProperty("webdriver.chrome.driver",
+                    "C:\\Users\\BorysN\\chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
             driverWrapper = new WebDriverWrapper(new ChromeDriver(options));
         } else {

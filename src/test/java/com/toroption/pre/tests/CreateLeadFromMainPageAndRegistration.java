@@ -37,8 +37,8 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
          */
         driver.get("https://dropmail.me");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement emeilField = driver.findElement(By.xpath(".//div[2]/div[2]/div[1]/h2"));
-        String mail = emeilField.getText();
+        WebElement emailField = driver.findElement(By.xpath(".//div[2]/div[2]/div[1]/h2"));
+        String mail = emailField.getText();
         driver.close();
 
         /**
@@ -47,6 +47,7 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
         toroption.mainPage.clickAndInputFirstName(NAME);
         toroption.mainPage.clickAndInputLastName(SURNAME);
         toroption.mainPage.clickAndInputEmail(mail);
+        toroption.mainPage.chooseCountry();
         toroption.mainPage.clickAndInputPhone(PHONE);
         toroption.mainPage.clickJoinButton();
         Assert.assertTrue(toroption.mainPage.isOpenAccountFormPresent());
@@ -63,6 +64,7 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
         toroption.openAccount.clickLoginButton();
         Assert.assertTrue(toroption.mainPage.isUserLogIn());
         toroption.mainPage.logout();
+        toroption.mainPage.refreshPage();
     }
     @AfterMethod
     public void takeScreenShotOnFailure(ITestResult testResult) throws IOException {

@@ -21,6 +21,7 @@ public class LoginAndTryToTrade extends Fixture {
     @Test(priority = 1)
     public void logIn() {
         toroption.mainPage.openPage();
+        toroption.mainPage.refreshPage();
         toroption.mainPage.isTradeSpotPresent();
         toroption.mainPage.clickAndInputLoginField(EMAIL);
         toroption.mainPage.clickAndInputPassField(PASS);
@@ -29,8 +30,10 @@ public class LoginAndTryToTrade extends Fixture {
         Assert.assertTrue(toroption.mainPage.isTradeSpotForLoggedInUserPresent());
     }
     @Test(priority = 2)
-    public void tryToTrade() {
+    public void tryToTrade() throws InterruptedException {
+        Thread.sleep(3000);
         toroption.mainPage.pushCallBtn();
+        Thread.sleep(3000);
         toroption.mainPage.pushApplyBtn();
         Assert.assertTrue(toroption.mainPage.isTradeSpotForLoggedInUserPresent());
 

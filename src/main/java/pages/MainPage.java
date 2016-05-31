@@ -1,6 +1,7 @@
 package pages;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import utils.PropertyLoader;
 import utils.WebDriverWrapper;
@@ -160,7 +161,7 @@ public class MainPage extends AbstractPage {
     }
 
     public void pushCallBtn() {
-        web.moveToElementAndClick("callBtn", "callBtn");
+        web.clickButton("callBtn");
     }
 
     public void logout() {
@@ -169,10 +170,14 @@ public class MainPage extends AbstractPage {
     }
 
     public void pushApplyBtn() {
-        web.clickElement("applyBtn");
+        web.clickButton("applyBtn");
     }
 
     public void refreshPage() {
         web.refreshPage();
+    }
+    public void chooseCountry() {
+        web.clickElement("chooseCountry");
+        web.clickElement("turkmenistan");
     }
 }

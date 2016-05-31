@@ -31,6 +31,7 @@ public class RegistrationEmailWhichUsed extends Fixture{
         toroption.mainPage.clickAndInputFirstName(NAME);
         toroption.mainPage.clickAndInputLastName(SURNAME);
         toroption.mainPage.clickAndInputEmail(EMAIL);
+        toroption.mainPage.chooseCountry();
         toroption.mainPage.clickAndInputPhone(PHONE);
         toroption.mainPage.clickJoinButton();
         Assert.assertTrue(toroption.mainPage.isOpenAccountFormPresent());
