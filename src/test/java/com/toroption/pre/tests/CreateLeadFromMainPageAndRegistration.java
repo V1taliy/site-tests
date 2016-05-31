@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
@@ -36,7 +37,7 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
          */
         driver.get("https://dropmail.me");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement emeilField = driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/h2/span[1]"));
+        WebElement emeilField = driver.findElement(By.xpath(".//div[2]/div[2]/div[1]/h2"));
         String mail = emeilField.getText();
         driver.close();
 
@@ -64,7 +65,10 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
         toroption.mainPage.logout();
     }
     @AfterMethod
-    public void takeScreenShot() throws IOException {
-        ScreenShot.quicklyScreenShot(driverWrapper, DEFAULT_FILE_PATH, DEFAULT_FILE_NAME, DEFAULT_FILE_FORMAT);
+    public void takeScreenShotOnFailure(ITestResult testResult) throws IOException {
+        if (testResult.getStatus() == ITestResult.FAILURE) {
+            System.out.println(testResult.getStatus());
+            ScreenShot.quicklyScreenShot(driverWrapper, DEFAULT_FILE_PATH, DEFAULT_FILE_NAME, DEFAULT_FILE_FORMAT);
+        }
     }
 }

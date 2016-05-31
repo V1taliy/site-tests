@@ -1,6 +1,7 @@
 package com.toroption.pre.tests;
 
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
@@ -25,6 +26,8 @@ public class RegistrationEmailWhichUsed extends Fixture{
      * The filling lead form, with email which was used earlier
      */
     public void fillLeadForm() {
+        toroption.mainPage.openPage();
+        toroption.mainPage.refreshPage();
         toroption.mainPage.clickAndInputFirstName(NAME);
         toroption.mainPage.clickAndInputLastName(SURNAME);
         toroption.mainPage.clickAndInputEmail(EMAIL);
@@ -46,7 +49,10 @@ public class RegistrationEmailWhichUsed extends Fixture{
     }
 
     @AfterMethod
-    public void takeScreenShot() throws IOException {
-        ScreenShot.quicklyScreenShot(driverWrapper, DEFAULT_FILE_PATH, DEFAULT_FILE_NAME, DEFAULT_FILE_FORMAT);
+    public void takeScreenShotOnFailure(ITestResult testResult) throws IOException {
+        if (testResult.getStatus() == ITestResult.FAILURE) {
+            System.out.println(testResult.getStatus());
+            ScreenShot.quicklyScreenShot(driverWrapper, DEFAULT_FILE_PATH, DEFAULT_FILE_NAME, DEFAULT_FILE_FORMAT);
+        }
     }
 }

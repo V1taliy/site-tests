@@ -159,21 +159,20 @@ public class MainPage extends AbstractPage {
         }
     }
 
-    public void switchLanguageDE() {
-        web.clickElement("languageSwitchBtn");
-        web.clickElement("languageDE");
+    public void pushCallBtn() {
+        web.moveToElementAndClick("callBtn", "callBtn");
     }
-    public void switchLanguageES () {
-        web.clickElement("languageSwitchBtn");
-        web.clickElement("languageES");
-    }
-    public void switchLanguageRU () {
-        web.clickElement("languageSwitchBtn");
-        web.clickElement("languageRU");
-    }
+
     public void logout() {
         web.moveToElementAndClick("showProfileInfo", "showProfileInfo");
         web.clickButton("logoutBtn");
     }
 
+    public void pushApplyBtn() {
+        web.clickElement("applyBtn");
+    }
+
+    public void refreshPage() {
+        web.refreshPage();
+    }
 }
