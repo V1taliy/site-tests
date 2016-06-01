@@ -27,19 +27,18 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
     private static final String DEFAULT_FILE_FORMAT = PropertyLoader.loadProperty("screenshot.format");
 
 
-    WebDriver driver = new FirefoxDriver();
 
     @Test (priority = 1)
     public void fillLeadForm() {
-
+        WebDriver driverWrapper2 = new FirefoxDriver();
         /**
          * Generate random email
          */
-        driver.get("https://dropmail.me");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement emailField = driver.findElement(By.xpath(".//div[2]/div[2]/div[1]/h2"));
+        driverWrapper2.get("https://dropmail.me");
+        driverWrapper2.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement emailField = driverWrapper2.findElement(By.xpath(".//div[2]/div[2]/div[1]/h2"));
         String mail = emailField.getText();
-        driver.close();
+        driverWrapper2.close();
 
         /**
          * The filling lead form and the checking transmitted data from lead
