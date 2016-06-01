@@ -6,7 +6,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
-import utils.ScreenShot;
 
 import java.io.IOException;
 
@@ -37,13 +36,5 @@ public class LoginAndTryToTrade extends Fixture {
         toroption.mainPage.pushApplyBtn();
         Assert.assertTrue(toroption.mainPage.isTradeSpotForLoggedInUserPresent());
 
-    }
-
-    @AfterMethod
-    public void takeScreenShotOnFailure(ITestResult testResult) throws IOException {
-        if (testResult.getStatus() == ITestResult.FAILURE) {
-            System.out.println(testResult.getStatus());
-            ScreenShot.quicklyScreenShot(driverWrapper, DEFAULT_FILE_PATH, DEFAULT_FILE_NAME, DEFAULT_FILE_FORMAT);
-        }
     }
 }

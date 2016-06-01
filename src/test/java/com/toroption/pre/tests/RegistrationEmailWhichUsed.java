@@ -5,7 +5,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
-import utils.ScreenShot;
 
 import java.io.IOException;
 
@@ -16,9 +15,7 @@ public class RegistrationEmailWhichUsed extends Fixture{
     private static final String PASS = PropertyLoader.loadProperty("user.PASS");
     private static final String CAPTCHA = PropertyLoader.loadProperty("captcha");
     private static final String EMAIL = PropertyLoader.loadProperty("email");
-    private static final String DEFAULT_FILE_PATH = PropertyLoader.loadProperty("screenshot.folder");
-    private static final String DEFAULT_FILE_NAME = PropertyLoader.loadProperty("screenshot.name");
-    private static final String DEFAULT_FILE_FORMAT = PropertyLoader.loadProperty("screenshot.format");
+
 
 
     @Test(priority = 1)
@@ -47,13 +44,5 @@ public class RegistrationEmailWhichUsed extends Fixture{
         toroption.openAccount.clickAndInputCaptchaField(CAPTCHA);
         toroption.openAccount.clickLoginButton();
         Assert.assertTrue(toroption.openAccount.errorForm());
-    }
-
-    @AfterMethod
-    public void takeScreenShotOnFailure(ITestResult testResult) throws IOException {
-        if (testResult.getStatus() == ITestResult.FAILURE) {
-            System.out.println(testResult.getStatus());
-            ScreenShot.quicklyScreenShot(driverWrapper, DEFAULT_FILE_PATH, DEFAULT_FILE_NAME, DEFAULT_FILE_FORMAT);
-        }
     }
 }
