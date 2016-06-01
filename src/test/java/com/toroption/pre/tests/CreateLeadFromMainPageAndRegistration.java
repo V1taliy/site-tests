@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
-import utils.ScreenShot;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -21,24 +21,20 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
     private static final String PHONE = PropertyLoader.loadProperty("phone");
     private static final String PASS = PropertyLoader.loadProperty("user.PASS");
     private static final String CAPTCHA = PropertyLoader.loadProperty("captcha");
-    private static final String DEFAULT_FILE_PATH = PropertyLoader.loadProperty("screenshot.folder");
-    private static final String DEFAULT_FILE_NAME = PropertyLoader.loadProperty("screenshot.name");
-    private static final String DEFAULT_FILE_FORMAT = PropertyLoader.loadProperty("screenshot.format");
 
 
-    WebDriver driver = new FirefoxDriver();
 
     @Test (priority = 1)
     public void fillLeadForm() {
-
+        WebDriver driverWrapper2 = new FirefoxDriver();
         /**
          * Generate random email
          */
-        driver.get("https://dropmail.me");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement emeilField = driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/h2/span[1]"));
-        String mail = emeilField.getText();
-        driver.close();
+        driverWrapper2.get("https://dropmail.me");
+        driverWrapper2.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement emailField = driverWrapper2.findElement(By.xpath(".//div[2]/div[2]/div[1]/h2"));
+        String mail = emailField.getText();
+        driverWrapper2.close();
 
         /**
          * The filling lead form and the checking transmitted data from lead
@@ -46,6 +42,7 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
         toroption.mainPage.clickAndInputFirstName(NAME);
         toroption.mainPage.clickAndInputLastName(SURNAME);
         toroption.mainPage.clickAndInputEmail(mail);
+        toroption.mainPage.chooseCountry();
         toroption.mainPage.clickAndInputPhone(PHONE);
         toroption.mainPage.clickJoinButton();
         Assert.assertTrue(toroption.mainPage.isOpenAccountFormPresent());
@@ -62,9 +59,6 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
         toroption.openAccount.clickLoginButton();
         Assert.assertTrue(toroption.mainPage.isUserLogIn());
         toroption.mainPage.logout();
-    }
-    @AfterMethod
-    public void takeScreenShot() throws IOException {
-        ScreenShot.quicklyScreenShot(driverWrapper, DEFAULT_FILE_PATH, DEFAULT_FILE_NAME, DEFAULT_FILE_FORMAT);
+        toroption.mainPage.refreshPage();
     }
 }

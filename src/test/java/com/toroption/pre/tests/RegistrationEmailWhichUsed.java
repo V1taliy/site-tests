@@ -1,10 +1,10 @@
 package com.toroption.pre.tests;
 
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
-import utils.ScreenShot;
 
 import java.io.IOException;
 
@@ -15,9 +15,7 @@ public class RegistrationEmailWhichUsed extends Fixture{
     private static final String PASS = PropertyLoader.loadProperty("user.PASS");
     private static final String CAPTCHA = PropertyLoader.loadProperty("captcha");
     private static final String EMAIL = PropertyLoader.loadProperty("email");
-    private static final String DEFAULT_FILE_PATH = PropertyLoader.loadProperty("screenshot.folder");
-    private static final String DEFAULT_FILE_NAME = PropertyLoader.loadProperty("screenshot.name");
-    private static final String DEFAULT_FILE_FORMAT = PropertyLoader.loadProperty("screenshot.format");
+
 
 
     @Test(priority = 1)
@@ -25,9 +23,12 @@ public class RegistrationEmailWhichUsed extends Fixture{
      * The filling lead form, with email which was used earlier
      */
     public void fillLeadForm() {
+        toroption.mainPage.openPage();
+        toroption.mainPage.refreshPage();
         toroption.mainPage.clickAndInputFirstName(NAME);
         toroption.mainPage.clickAndInputLastName(SURNAME);
         toroption.mainPage.clickAndInputEmail(EMAIL);
+        toroption.mainPage.chooseCountry();
         toroption.mainPage.clickAndInputPhone(PHONE);
         toroption.mainPage.clickJoinButton();
         Assert.assertTrue(toroption.mainPage.isOpenAccountFormPresent());
@@ -43,10 +44,5 @@ public class RegistrationEmailWhichUsed extends Fixture{
         toroption.openAccount.clickAndInputCaptchaField(CAPTCHA);
         toroption.openAccount.clickLoginButton();
         Assert.assertTrue(toroption.openAccount.errorForm());
-    }
-
-    @AfterMethod
-    public void takeScreenShot() throws IOException {
-        ScreenShot.quicklyScreenShot(driverWrapper, DEFAULT_FILE_PATH, DEFAULT_FILE_NAME, DEFAULT_FILE_FORMAT);
     }
 }

@@ -1,6 +1,7 @@
 package pages;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import utils.PropertyLoader;
 import utils.WebDriverWrapper;
@@ -159,21 +160,24 @@ public class MainPage extends AbstractPage {
         }
     }
 
-    public void switchLanguageDE() {
-        web.clickElement("languageSwitchBtn");
-        web.clickElement("languageDE");
+    public void pushCallBtn() {
+        web.clickButton("callBtn");
     }
-    public void switchLanguageES () {
-        web.clickElement("languageSwitchBtn");
-        web.clickElement("languageES");
-    }
-    public void switchLanguageRU () {
-        web.clickElement("languageSwitchBtn");
-        web.clickElement("languageRU");
-    }
+
     public void logout() {
         web.moveToElementAndClick("showProfileInfo", "showProfileInfo");
         web.clickButton("logoutBtn");
     }
 
+    public void pushApplyBtn() {
+        web.clickButton("applyBtn");
+    }
+
+    public void refreshPage() {
+        web.refreshPage();
+    }
+    public void chooseCountry() {
+        web.clickElement("chooseCountry");
+        web.clickElement("turkmenistan");
+    }
 }
