@@ -55,6 +55,6 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
         toroption.openAccount.clickLoginButton();
         Assert.assertTrue(toroption.mainPage.isUserLogIn());
         toroption.mainPage.logout();
-        toroption.mainPage.refreshPage();
+//        toroption.mainPage.refreshPage();
     }
 }

@@ -1,17 +1,17 @@
 package com.toroption.pre.tests;
 
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class innerMenu extends Fixture {
+public class InnerMenu extends Fixture {
 
     @Test(priority = 1)
     public void economicCalendar() throws InterruptedException {
         toroption.economicCalendar.clickEconomicCalendar();
         Assert.assertTrue(toroption.economicCalendar.isEconomicCalendarDisplayed());
         Assert.assertEquals(driverWrapper.getTitle(), "Economic calendar");
+        toroption.contactUS.popup();
     }
     @Test(priority = 2)
     public void assetIndex() {

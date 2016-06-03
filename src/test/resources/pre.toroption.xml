@@ -15,5 +15,10 @@
                 <class name="com.toroption.pre.tests.LoginAndTryToTrade"/>
             </classes>
     </test>
+    <test name="TESTING BASIC INNER PAGE">
+            <classes>
+                <class name="com.toroption.pre.tests.InnerMenu"/>
+            </classes>
+    </test>
 </suite>
 

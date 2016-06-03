@@ -1,6 +1,11 @@
 package pages;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import utils.WebDriverWrapper;
+
+import static org.apache.commons.io.FileUtils.waitFor;
 
 public class EconomicCalendar extends AbstractPage {
 

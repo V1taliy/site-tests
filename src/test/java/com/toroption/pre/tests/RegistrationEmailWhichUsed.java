@@ -1,5 +1,6 @@
 package com.toroption.pre.tests;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
@@ -40,6 +41,7 @@ public class RegistrationEmailWhichUsed extends Fixture{
         toroption.openAccount.clickAndInputPassVerificationField(PASS);
         toroption.openAccount.clickAndInputCaptchaField(CAPTCHA);
         toroption.openAccount.clickLoginButton();
-        Assert.assertTrue(toroption.openAccount.errorForm());
+        Assert.assertEquals(driverWrapper.findElement(By.xpath(".//div[2][@id='error-form']/p/div")).getAttribute("style"), "margin: 20px 0px;");
+        Assert.assertTrue(toroption.openAccount.isAlertPresent());
     }
 }
