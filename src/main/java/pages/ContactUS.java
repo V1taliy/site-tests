@@ -63,9 +63,5 @@ public class ContactUS extends AbstractPage {
            return true;
        }
     }
-    public void popup() {
-        String popup = driverWrapper.getWindowHandle();
-        driverWrapper.switchTo().window(popup).close();
-    }
 }
 
