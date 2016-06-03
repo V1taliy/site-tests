@@ -14,7 +14,7 @@ public class ScreensShotMaker {
             throws IOException {
         TakesScreenshot takesScreenshot = (TakesScreenshot) driverWrapper;
         File source  = takesScreenshot.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(source, new File(".Screenshots/" + screenShotName + ".jpg"));
+        FileUtils.copyFile(source, new File("./target/Screenshots/" + screenShotName + ".jpg"));
         log.info("screenshot taken successfully!");
     }
 }

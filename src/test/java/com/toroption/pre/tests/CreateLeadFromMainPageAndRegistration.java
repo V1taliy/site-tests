@@ -6,12 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
-
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class CreateLeadFromMainPageAndRegistration extends Fixture {

@@ -3,6 +3,7 @@ package utils;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
 public class WebDriverFactory {
@@ -23,8 +24,10 @@ public class WebDriverFactory {
     }
 
     public static WebDriverWrapper initDriver() {
+
+        DesiredCapabilities capability = new DesiredCapabilities();
         if (FIREFOX.equals(browserName)) {
-            driverWrapper = new WebDriverWrapper(new FirefoxDriver());
+            driverWrapper = new WebDriverWrapper(new FirefoxDriver(capability));
         } else if (CHROME.equals(browserName)) {
             System.setProperty("webdriver.chrome.driver",
                     "C:\\Users\\BorysN\\chromedriver.exe");
