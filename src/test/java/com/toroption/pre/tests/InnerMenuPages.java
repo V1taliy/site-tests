@@ -4,7 +4,7 @@ package com.toroption.pre.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class InnerMenu extends Fixture {
+public class InnerMenuPages extends Fixture {
 
     @Test(priority = 1)
     public void economicCalendar() throws InterruptedException {
@@ -32,5 +32,6 @@ public class InnerMenu extends Fixture {
         toroption.contactUS.inputMessage();
         toroption.contactUS.clickSubmitBtn();
         Assert.assertTrue(toroption.contactUS.isAlertPresent());
+
     }
 }
