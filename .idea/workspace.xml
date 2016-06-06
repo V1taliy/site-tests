@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8c1e0e3e-a9a9-43e5-a828-07e5b4f8b92d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/AccountPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/AccountPage.java" />
     </list>
     <ignored path="site-tests.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,8 +58,8 @@
       <file leaf-file-name="AccountPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/AccountPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+            <state relative-caret-position="309">
+              <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -705,25 +706,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465222699371</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="AS-939&#10;delete logout">
+      <created>1465222706381</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1465222706381</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountPage - 2016.06.06 at 15h 30m 48s.xml">
-      <configuration name="AccountPage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountPage - 2016.06.06 at 15h 44m 29s.xml">
-      <configuration name="AccountPage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountPage - 2016.06.06 at 15h 46m 21s.xml">
-      <configuration name="AccountPage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountPage - 2016.06.06 at 15h 49m 40s.xml">
-      <configuration name="AccountPage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountPage - 2016.06.06 at 15h 51m 47s.xml">
-      <configuration name="AccountPage" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AccountPage - 2016.06.06 at 15h 53m 38s.xml">
       <configuration name="AccountPage" configurationId="TestNG" />
     </history-entry>
@@ -737,6 +730,21 @@
       <configuration name="AccountPage" configurationId="TestNG" />
     </history-entry>
     <history-entry file="AccountPage - 2016.06.06 at 17h 17m 32s.xml">
+      <configuration name="AccountPage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountPage - 2016.06.06 at 17h 19m 01s.xml">
+      <configuration name="AccountPage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountPage - 2016.06.06 at 17h 19m 56s.xml">
+      <configuration name="AccountPage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountPage - 2016.06.06 at 17h 20m 52s.xml">
+      <configuration name="AccountPage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountPage - 2016.06.06 at 17h 24m 11s.xml">
+      <configuration name="AccountPage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountPage - 2016.06.06 at 17h 30m 25s.xml">
       <configuration name="AccountPage" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -866,8 +874,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/AccountPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+        <state relative-caret-position="309">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

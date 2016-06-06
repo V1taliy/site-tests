@@ -12,7 +12,7 @@ public class AccountPage extends Fixture{
     private static final String PHONE = PropertyLoader.loadProperty("editPhone");
 
     @Test(priority = 1)
-    public void PersonalInfo() {
+    public void PersonalInfo() throws InterruptedException {
         toroption.mainPage.clickAndInputLoginField(EMAIL);
         toroption.mainPage.clickAndInputPassField(PASS);
         toroption.mainPage.clickLoginButton();
@@ -27,9 +27,9 @@ public class AccountPage extends Fixture{
         toroption.openAccount.closeAlert();
         Assert.assertEquals(driverWrapper.findElement(By.xpath(".//*[@id='personal_information_phone']")).getAttribute("value"), PHONE);
     }
-    /**
-     * Further methods are not actual, because not possible test functions
-     */
+//    /**
+//     * Further methods are not actual, because not possible test functions
+//     */
 //    @Test(priority = 2)
 //    public void bankingHistory() throws InterruptedException {
 //        toroption.openAccount.bankingHistory();
