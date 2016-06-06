@@ -11,7 +11,6 @@ public class InnerMenu extends Fixture {
         toroption.economicCalendar.clickEconomicCalendar();
         Assert.assertTrue(toroption.economicCalendar.isEconomicCalendarDisplayed());
         Assert.assertEquals(driverWrapper.getTitle(), "Economic calendar");
-        toroption.contactUS.popup();
     }
     @Test(priority = 2)
     public void assetIndex() {
