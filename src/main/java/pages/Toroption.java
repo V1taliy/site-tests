@@ -8,6 +8,9 @@ public class Toroption {
     public WebElementsActions web;
     public MainPage mainPage;
     public OpenAccount openAccount;
+    public EconomicCalendar economicCalendar;
+    public AssetIndex assetIndex;
+    public ContactUS contactUS;
 
 
 
@@ -15,6 +18,8 @@ public class Toroption {
         web = new WebElementsActions(driverWrapper);
         mainPage = new MainPage(driverWrapper);
         openAccount = new OpenAccount(driverWrapper);
+        economicCalendar = new EconomicCalendar(driverWrapper);
+        assetIndex = new AssetIndex(driverWrapper);
+        contactUS = new ContactUS(driverWrapper);
     }
-
 }

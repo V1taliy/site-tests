@@ -1,8 +1,11 @@
 package utils;
 
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
 public class WebDriverFactory {
@@ -23,8 +26,14 @@ public class WebDriverFactory {
     }
 
     public static WebDriverWrapper initDriver() {
+        String httpProxy = "217.106.65.253:3128";
+        String sslProxy = "217.106.65.253:3128";
+        String ftpProxy = "217.106.65.253:3128";
+        DesiredCapabilities capability = new DesiredCapabilities();
+        addProxyCapabilities(capability, httpProxy, sslProxy, ftpProxy);
+
         if (FIREFOX.equals(browserName)) {
-            driverWrapper = new WebDriverWrapper(new FirefoxDriver());
+            driverWrapper = new WebDriverWrapper(new FirefoxDriver(capability));
         } else if (CHROME.equals(browserName)) {
             System.setProperty("webdriver.chrome.driver",
                     "C:\\Users\\BorysN\\chromedriver.exe");
@@ -37,5 +46,18 @@ public class WebDriverFactory {
         driverWrapper.manage().window().maximize();
         return driverWrapper;
     }
+    public static DesiredCapabilities addProxyCapabilities(DesiredCapabilities capability, String httpProxy, String sslProxy,
+                                                           String ftpProxy) {
+        Proxy proxy = new Proxy();
+        proxy.setProxyType(Proxy.ProxyType.MANUAL);
+        proxy.setHttpProxy(httpProxy);
+        proxy.setSslProxy(sslProxy);
+        proxy.setFtpProxy(ftpProxy);
+
+        capability.setCapability(CapabilityType.PROXY, proxy);
+        capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        return capability;
+    }
+
 
 }

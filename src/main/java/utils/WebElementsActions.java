@@ -252,6 +252,16 @@ public class WebElementsActions {
         return alertText;
     }
 
+    public Alert getAlert() {
+        try {
+            Alert alert = driverWrapper.switchTo().alert();
+            return alert;
+        } catch (NoAlertPresentException e) {
+            // no alert to dismiss, so return null
+            return null;
+        }
+    }
+
     /**
      * First method for refresh page
      */
@@ -387,7 +397,7 @@ public class WebElementsActions {
     public void windowScrollDown() {
         JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driverWrapper.getOriginalDriver();
         // Vertical scroll - down by 200  pixels
-        javascriptExecutor.executeScript("window.scrollBy(0,700)", "");
+        javascriptExecutor.executeScript("window.scrollBy(0,200)", "");
     }
 
     /**

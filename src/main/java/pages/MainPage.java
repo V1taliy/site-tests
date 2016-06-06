@@ -1,7 +1,6 @@
 package pages;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import utils.PropertyLoader;
 import utils.WebDriverWrapper;
@@ -178,6 +177,6 @@ public class MainPage extends AbstractPage {
     }
     public void chooseCountry() {
         web.clickElement("chooseCountry");
-        web.clickElement("turkmenistan");
+        web.clickElement("norway");
     }
 }
