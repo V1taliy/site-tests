@@ -17,7 +17,7 @@
     </test>
     <test name="TESTING BASIC INNER PAGE">
             <classes>
-                <class name="com.toroption.pre.tests.InnerMenu"/>
+                <class name="com.toroption.pre.tests.InnerMenuPages"/>
             </classes>
     </test>
 </suite>
