@@ -175,8 +175,13 @@ public class MainPage extends AbstractPage {
     public void refreshPage() {
         web.refreshPage();
     }
+
     public void chooseCountry() {
         web.clickElement("chooseCountry");
         web.clickElement("norway");
+    }
+    public void clickMyAccount() {
+        web.clickElement("userIsLogIn");
+        web.clickButton("myAccountBtn");
     }
 }
