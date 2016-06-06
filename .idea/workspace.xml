@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8c1e0e3e-a9a9-43e5-a828-07e5b4f8b92d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/AccountPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/AccountPage.java" />
     </list>
     <ignored path="site-tests.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,8 +57,8 @@
       <file leaf-file-name="AccountPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/AccountPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="530">
+              <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -699,7 +698,14 @@
       <option name="project" value="LOCAL" />
       <updated>1465219488004</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="AS-939&#10;delete logout">
+      <created>1465222699371</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1465222699371</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -769,7 +775,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AS-939" />
-    <option name="LAST_COMMIT_MESSAGE" value="AS-939" />
+    <MESSAGE value="AS-939&#10;delete logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="AS-939&#10;delete logout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -859,8 +866,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/AccountPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="530">
+          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
