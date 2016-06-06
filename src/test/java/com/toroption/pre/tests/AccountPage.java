@@ -26,7 +26,6 @@ public class AccountPage extends Fixture{
         Assert.assertTrue(toroption.contactUS.isAlertPresent());
         toroption.openAccount.closeAlert();
         Assert.assertEquals(driverWrapper.findElement(By.xpath(".//*[@id='personal_information_phone']")).getAttribute("value"), PHONE);
-        toroption.mainPage.logout();
     }
     /**
      * Further methods are not actual, because not possible test functions
