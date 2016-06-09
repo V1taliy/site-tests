@@ -13,6 +13,7 @@ public class AccountPage extends Fixture{
 
     @Test(priority = 1)
     public void PersonalInfo() throws InterruptedException {
+        toroption.mainPage.openPage();
         toroption.mainPage.clickAndInputLoginField(EMAIL);
         toroption.mainPage.clickAndInputPassField(PASS);
         toroption.mainPage.clickLoginButton();

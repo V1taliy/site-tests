@@ -33,6 +33,7 @@ public class InnerMenuPages extends Fixture {
         toroption.contactUS.inputMessage();
         toroption.contactUS.clickSubmitBtn();
         Assert.assertTrue(toroption.contactUS.isAlertPresent());
+        Thread.sleep(2000);
         toroption.openAccount.closeAlert();
 
     }

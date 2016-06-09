@@ -8,6 +8,11 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
+import java.util.HashMap;
+import java.util.Objects;
+
+import static org.apache.http.client.methods.RequestBuilder.put;
+
 public class WebDriverFactory {
 
     public static final String browserName = PropertyLoader.loadProperty("browser.name");
@@ -38,7 +43,7 @@ public class WebDriverFactory {
             System.setProperty("webdriver.chrome.driver",
                     "C:\\Users\\BorysN\\chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
-            driverWrapper = new WebDriverWrapper(new ChromeDriver(options));
+            driverWrapper = new WebDriverWrapper(new ChromeDriver(capability));
         } else {
             Assert.fail("invalid driver name");
         }
@@ -56,8 +61,17 @@ public class WebDriverFactory {
 
         capability.setCapability(CapabilityType.PROXY, proxy);
         capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        capability.setCapability(ChromeOptions.CAPABILITY, new ChromeOptions(){
+            {
+                setExperimentalOption("mobileEmulation", new HashMap<String, Object>() {
+                    {
+                        put("deviceName", "Google Nexus 5");
+                    }
+                });
+            }
+        });
+
+
         return capability;
     }
-
-
 }
