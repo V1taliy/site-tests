@@ -3,6 +3,7 @@ package com.toroption.pre.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utils.WebDriverWrapper;
 
 public class InnerMenuPages extends Fixture {
 
@@ -32,6 +33,7 @@ public class InnerMenuPages extends Fixture {
         toroption.contactUS.inputMessage();
         toroption.contactUS.clickSubmitBtn();
         Assert.assertTrue(toroption.contactUS.isAlertPresent());
+        toroption.openAccount.closeAlert();
 
     }
 }

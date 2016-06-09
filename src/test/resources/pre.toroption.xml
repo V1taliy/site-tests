@@ -20,5 +20,10 @@
                 <class name="com.toroption.pre.tests.InnerMenuPages"/>
             </classes>
     </test>
+    <test name="TESTING PERSONAL INFORMATION OF MY ACCOUNT PAGE">
+            <classes>
+                <class name="com.toroption.pre.tests.AccountPage"/>
+            </classes>
+    </test>
 </suite>
 

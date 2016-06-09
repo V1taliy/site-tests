@@ -70,4 +70,57 @@ public class OpenAccount extends AbstractPage {
             return true;
         }
     }
+    public void clickAndEditPhone(String phoneData) {
+        try {
+            web.clickElement("personalInfoPhone");
+            isBeCleaned("personalInfoPhone");
+            web.input("personalInfoPhone", phoneData);
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        }
+    }
+    public void clickUpdateDetails() {
+        web.clickButton("updateDetailsBtn");
+    }
+
+    public void closeAlert() {
+        web.clickElement("closeAlert");
+    }
+    public void bankingHistory() {
+        web.waitElementToBeClickable("bankingHistoryBtn");
+        web.clickElement("bankingHistoryBtn");
+        web.waitForElementPresent("bankingHistoryInfo");
+    }
+    public boolean bankingHistoryIsDisplayed() {
+        if (web.isElementPresent("bankingHistoryInfo")) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+    public void withdrawal() {
+        web.waitElementToBeClickable("withdrawalBtn");
+        web.clickElement("withdrawalBtn");
+        web.waitForElementPresent("withdrawalInfo");
+    }
+    public boolean withdrawalIsDisplayed() {
+        if (web.isElementPresent("withdrawalInfo")) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+    public void positions() {
+        web.waitElementToBeClickable("positionsBtn");
+        web.clickElement("positionsBtn");
+        web.waitForElementPresent("positionsInfo");
+    }
+    public boolean positionsIsDisplayed() {
+        if (web.isElementPresent("positionsInfo")) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+
 }
