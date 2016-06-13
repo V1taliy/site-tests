@@ -9,12 +9,14 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 import static org.apache.http.client.methods.RequestBuilder.put;
 
 public class WebDriverFactory {
 
+    public static WebDriverWrapper driverWrapper;
     public static final String browserName = PropertyLoader.loadProperty("browser.name");
     public static final String browserVersion = PropertyLoader.loadProperty("browser.version");
     public static final String platform = PropertyLoader.loadProperty("browser.platform");
@@ -22,28 +24,52 @@ public class WebDriverFactory {
     /*Browsers constants*/
     private static final String FIREFOX = "firefox";
     private static final String CHROME = "chrome";
-//    private static final String HTML_UNIT = "htmlunit";
-//    private static final String PHANTOMJS = "phantomjs";
+    private static final String MOBILE_EMULATOR = "mobileEmulator";
+    private static final String HTML_UNIT = "htmlunit";
+    private static final String PHANTOMJS = "phantomjs";
+    /*Proxy configuration*/
+    private static final String  httpProxy = "217.106.65.253:3128";
+    private static final String  sslProxy = "217.106.65.253:3128";
+    private static final String  ftpProxy = "217.106.65.253:3128";
+    /*Capabilities */
+    private static DesiredCapabilities  capabilities = new DesiredCapabilities();
+    private static String DeviceName = "Apple iPhone 5";
 
-    public static WebDriverWrapper driverWrapper;
 
     public WebDriverFactory() {
     }
 
     public static WebDriverWrapper initDriver() {
-        String httpProxy = "217.106.65.253:3128";
-        String sslProxy = "217.106.65.253:3128";
-        String ftpProxy = "217.106.65.253:3128";
-        DesiredCapabilities capability = new DesiredCapabilities();
-        addProxyCapabilities(capability, httpProxy, sslProxy, ftpProxy);
+
+
+        addProxyCapabilities(capabilities, httpProxy, sslProxy, ftpProxy);
 
         if (FIREFOX.equals(browserName)) {
-            driverWrapper = new WebDriverWrapper(new FirefoxDriver(capability));
+            driverWrapper = new WebDriverWrapper(new FirefoxDriver(WebDriverFactory.capabilities));
         } else if (CHROME.equals(browserName)) {
+
             System.setProperty("webdriver.chrome.driver",
                     "C:\\Users\\BorysN\\chromedriver.exe");
+
+            WebDriverFactory.capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
-            driverWrapper = new WebDriverWrapper(new ChromeDriver(capability));
+            driverWrapper = new WebDriverWrapper(new ChromeDriver(options));
+
+        } else if (MOBILE_EMULATOR.equals(browserName)) {
+
+            System.setProperty("webdriver.chrome.driver",
+                    "C:\\Users\\BorysN\\chromedriver.exe");
+
+            Map<String, String> mobileEmulation = new HashMap<String, String>();
+            mobileEmulation.put("deviceName", DeviceName);
+
+            Map<String, Object> chromeOptions = new HashMap<String, Object>();
+            chromeOptions.put("mobileEmulation", mobileEmulation);
+
+            WebDriverFactory.capabilities = DesiredCapabilities.chrome();
+            WebDriverFactory.capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+
+            driverWrapper = new WebDriverWrapper(new ChromeDriver(WebDriverFactory.capabilities));
         } else {
             Assert.fail("invalid driver name");
         }
@@ -61,17 +87,6 @@ public class WebDriverFactory {
 
         capability.setCapability(CapabilityType.PROXY, proxy);
         capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        capability.setCapability(ChromeOptions.CAPABILITY, new ChromeOptions(){
-            {
-                setExperimentalOption("mobileEmulation", new HashMap<String, Object>() {
-                    {
-                        put("deviceName", "Google Nexus 5");
-                    }
-                });
-            }
-        });
-
-
         return capability;
     }
 }
