@@ -11,6 +11,7 @@ public class Toroption {
     public EconomicCalendar economicCalendar;
     public AssetIndex assetIndex;
     public ContactUS contactUS;
+    public AccountTypes accountTypes;
 
 
 
@@ -21,5 +22,6 @@ public class Toroption {
         economicCalendar = new EconomicCalendar(driverWrapper);
         assetIndex = new AssetIndex(driverWrapper);
         contactUS = new ContactUS(driverWrapper);
+        accountTypes = new AccountTypes(driverWrapper);
     }
 }

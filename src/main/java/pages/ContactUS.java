@@ -11,7 +11,7 @@ public class ContactUS extends AbstractPage {
         super(driverWrapper);
     }
     public void clickContactUs() {
-        web.moveToElementAndClick("contactUs", "contactUs");
+        web.moveToElementAndClick("contactUsNavi", "contactUs");
     }
 
     public void inputFullName() {

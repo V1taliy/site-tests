@@ -3,24 +3,28 @@ package com.toroption.pre.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utils.WebDriverWrapper;
 
 public class InnerMenuPages extends Fixture {
 
     @Test(priority = 1)
+    public void accountTypesDesktop() throws InterruptedException {
+        toroption.accountTypes.clickAccountTypesDesktop();
+        Assert.assertTrue(toroption.accountTypes.isAccountTypesContentDesktopPresent());
+    }
+    @Test(priority = 2)
     public void economicCalendar() throws InterruptedException {
         toroption.economicCalendar.clickEconomicCalendar();
         Assert.assertTrue(toroption.economicCalendar.isEconomicCalendarDisplayed());
         Assert.assertEquals(driverWrapper.getTitle(), "Economic calendar");
     }
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void assetIndex() {
         toroption.assetIndex.clickAssetIndex();
         Assert.assertTrue(toroption.assetIndex.isAssetIndexSpotPresent());
         Assert.assertEquals(driverWrapper.getTitle(), "Asset Index");
     }
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void contactUsRegFormMin() throws InterruptedException {
         toroption.contactUS.clickContactUs();
         Assert.assertEquals(driverWrapper.getTitle(), "Contact Us");
@@ -33,7 +37,7 @@ public class InnerMenuPages extends Fixture {
         toroption.contactUS.inputMessage();
         toroption.contactUS.clickSubmitBtn();
         Assert.assertTrue(toroption.contactUS.isAlertPresent());
+        Thread.sleep(2000);
         toroption.openAccount.closeAlert();
-
     }
 }
