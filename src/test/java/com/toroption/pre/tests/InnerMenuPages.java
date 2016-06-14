@@ -35,6 +35,5 @@ public class InnerMenuPages extends Fixture {
         Assert.assertTrue(toroption.contactUS.isAlertPresent());
         Thread.sleep(2000);
         toroption.openAccount.closeAlert();
-
     }
 }
