@@ -3,7 +3,6 @@ package com.toroption.pre.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.MainPage;
 import utils.PropertyLoader;
 
 public class CreateLeadFromMainPageAndRegistration extends Fixture {

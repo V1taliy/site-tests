@@ -42,7 +42,7 @@ public class WebDriverFactory {
     public static WebDriverWrapper initDriver() {
 
 
-        addProxyCapabilities(capabilities, httpProxy, sslProxy, ftpProxy);
+//        addProxyCapabilities(capabilities, httpProxy, sslProxy, ftpProxy);
 
         if (FIREFOX.equals(browserName)) {
             driverWrapper = new WebDriverWrapper(new FirefoxDriver(WebDriverFactory.capabilities));
