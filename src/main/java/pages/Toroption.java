@@ -12,6 +12,7 @@ public class Toroption {
     public AssetIndex assetIndex;
     public ContactUS contactUS;
     public AccountTypes accountTypes;
+    public MTE mte;
 
 
 
@@ -23,5 +24,6 @@ public class Toroption {
         assetIndex = new AssetIndex(driverWrapper);
         contactUS = new ContactUS(driverWrapper);
         accountTypes = new AccountTypes(driverWrapper);
+        mte = new MTE(driverWrapper);
     }
 }
