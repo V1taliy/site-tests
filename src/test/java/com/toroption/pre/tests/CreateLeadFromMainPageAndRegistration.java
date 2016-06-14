@@ -1,14 +1,10 @@
 package com.toroption.pre.tests;
 
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.MainPage;
 import utils.PropertyLoader;
-import java.util.concurrent.TimeUnit;
 
 public class CreateLeadFromMainPageAndRegistration extends Fixture {
 
@@ -20,28 +16,18 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
 
 
 
+
     @Test (priority = 1)
     public void fillLeadForm() {
-        WebDriver driverWrapper2 = new FirefoxDriver();
-        /**
-         * Generate random email
-         */
-        driverWrapper2.get("https://dropmail.me");
-        driverWrapper2.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement emailField = driverWrapper2.findElement(By.xpath(".//div[2]/div[2]/div[1]/h2"));
-        String mail = emailField.getText();
-        driverWrapper2.close();
-
-        /**
-         * The filling lead form and the checking transmitted data from lead
-         */
+        String EMAIL = toroption.mainPage.emailGenerate();
         toroption.mainPage.clickAndInputFirstName(NAME);
         toroption.mainPage.clickAndInputLastName(SURNAME);
-        toroption.mainPage.clickAndInputEmail(mail);
+        toroption.mainPage.clickAndInputEmail(EMAIL);
         toroption.mainPage.chooseCountry();
         toroption.mainPage.clickAndInputPhone(PHONE);
         toroption.mainPage.clickJoinButton();
         Assert.assertTrue(toroption.mainPage.isOpenAccountFormPresent());
+
     }
 
     @Test(priority = 2)
@@ -54,6 +40,7 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
         toroption.openAccount.clickAndInputCaptchaField(CAPTCHA);
         toroption.openAccount.clickLoginButton();
         Assert.assertTrue(toroption.mainPage.isUserLogIn());
+        Assert.assertTrue(toroption.mainPage.isTradeSpotForLoggedInUserPresent());
         toroption.mainPage.logout();
     }
 }

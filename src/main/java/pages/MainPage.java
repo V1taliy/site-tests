@@ -1,9 +1,15 @@
 package pages;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import utils.PropertyLoader;
 import utils.WebDriverWrapper;
+
+import java.util.concurrent.TimeUnit;
 
 public class MainPage extends AbstractPage {
 
@@ -183,5 +189,19 @@ public class MainPage extends AbstractPage {
     public void clickMyAccount() {
         web.clickElement("userIsLogIn");
         web.clickButton("myAccountBtn");
+    }
+
+    /**
+     * Generate random email
+     */
+
+    public String emailGenerate() {
+        WebDriver driverWrapper = new FirefoxDriver();
+        driverWrapper.get("https://dropmail.me");
+        driverWrapper.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement emailField = driverWrapper.findElement(By.xpath(".//div[2]/div[2]/div[1]/h2"));
+        emailField.getText();
+        driverWrapper.close();
+        return emailField.getText();
     }
 }
