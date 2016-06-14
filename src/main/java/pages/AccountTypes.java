@@ -49,5 +49,15 @@ public class AccountTypes extends AbstractPage {
             return false;
         }
     }
+    public void clickAccountTypesDesktop() throws InterruptedException {
+        web.moveToElementAndClick("accounts", "accountTypes");
+    }
+    public boolean isAccountTypesContentDesktopPresent() {
+        if (web.isElementPresent("accountTypesContent")){
+            return true;
+        }else {
+            return false;
+        }
+    }
 
 }
