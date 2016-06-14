@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c1e0e3e-a9a9-43e5-a828-07e5b4f8b92d" name="Default" comment="AS-939&#10; o">
+    <list default="true" id="8c1e0e3e-a9a9-43e5-a828-07e5b4f8b92d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/WebDriverFactory.java" afterPath="$PROJECT_DIR$/src/main/java/utils/WebDriverFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/Toroption.java" afterPath="$PROJECT_DIR$/src/main/java/pages/Toroption.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/UIMapping.properties" afterPath="$PROJECT_DIR$/src/main/resources/UIMapping.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
@@ -50,8 +50,8 @@
       <file leaf-file-name="Toroption.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/Toroption.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/WebDriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="26" column="65" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="65" />
+              <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
               <folding>
                 <element signature="e#2542#2558#0" expanded="true" />
                 <element signature="e#2681#2697#0" expanded="true" />
@@ -70,11 +70,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/AccountPage.java">
+      <file leaf-file-name="UIMapping.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/UIMapping.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="462">
+              <caret line="66" column="56" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountTypes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/AccountTypes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-14">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#154#155#0" expanded="true" />
+                <element signature="e#190#191#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1276#1277#0" expanded="true" />
+                <element signature="e#1345#1346#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mobile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/Mobile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,31 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UIMapping.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/UIMapping.properties">
+      <file leaf-file-name="CreateLeadFromMainPageAndRegistration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/CreateLeadFromMainPageAndRegistration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpenAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/OpenAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/ConfigData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="16" column="77" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -125,8 +134,8 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -169,7 +178,10 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/WebDriverWrapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/WebDriverFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/Toroption.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/AccountTypes.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/Mobile.java" />
         <option value="$PROJECT_DIR$/src/main/resources/UIMapping.properties" />
       </list>
     </option>
@@ -377,7 +389,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/New folder/toroption" />
   </component>
-  <component name="RunManager" selected="TestNG.RegistrationEmailWhichUsed">
+  <component name="RunManager" selected="TestNG.Mobile">
     <configuration default="false" name="AccountPage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -394,39 +406,6 @@
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="test.tt (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.toroption.pre.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="pre.toroption" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.toroption.pre.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.toroption.pre.tests.test" />
-      <option name="METHOD_NAME" value="tt" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -523,6 +502,39 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.toroption.pre.tests" />
       <option name="MAIN_CLASS_NAME" value="com.toroption.pre.tests.RegistrationEmailWhichUsed" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="Mobile" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.toroption.pre.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="pre.toroption" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.toroption.pre.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.toroption.pre.tests.Mobile" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -779,18 +791,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="TestNG.AccountPage" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.test.tt (1)" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.test.tt (2)" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.InnerMenuPages.economicCalendar" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.RegistrationEmailWhichUsed" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.test.tt (2)" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.InnerMenuPages.economicCalendar" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.RegistrationEmailWhichUsed" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.Mobile" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.RegistrationEmailWhichUsed" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.InnerMenuPages.economicCalendar" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.AccountPage" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.test.tt (2)" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.test.tt (1)" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.Mobile" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.RegistrationEmailWhichUsed" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.InnerMenuPages.economicCalendar" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.AccountPage" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.test.tt (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -850,30 +862,37 @@
       <option name="project" value="LOCAL" />
       <updated>1465303150878</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="AS-975">
+      <created>1465830111050</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1465830111050</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountPage - 2016.06.09 at 12h 04m 41s.xml">
-      <configuration name="AccountPage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountPage - 2016.06.09 at 12h 05m 08s.xml">
-      <configuration name="AccountPage" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountPage - 2016.06.09 at 12h 23m 43s.xml">
-      <configuration name="AccountPage" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AccountPage - 2016.06.13 at 17h 51m 48s.xml">
       <configuration name="AccountPage" configurationId="TestNG" />
     </history-entry>
     <history-entry file="InnerMenuPages_economicCalendar - 2016.06.13 at 17h 52m 19s.xml">
       <configuration name="InnerMenuPages.economicCalendar" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Mobile - 2016.06.14 at 09h 38m 06s.xml">
+      <configuration name="Mobile" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Mobile - 2016.06.14 at 09h 39m 21s.xml">
+      <configuration name="Mobile" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Mobile - 2016.06.14 at 09h 40m 14s.xml">
+      <configuration name="Mobile" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Mobile - 2016.06.14 at 09h 47m 28s.xml">
+      <configuration name="Mobile" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="RegistrationEmailWhichUsed - 2016.06.13 at 18h 01m 12s.xml">
       <configuration name="RegistrationEmailWhichUsed" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="test_tt - 2016.06.09 at 12h 20m 01s.xml">
-      <configuration name="test.tt" configurationId="TestNG" />
     </history-entry>
     <history-entry file="test_tt - 2016.06.09 at 12h 21m 12s.xml">
       <configuration name="test.tt" configurationId="TestNG" />
@@ -930,7 +949,8 @@
     <MESSAGE value="AS-939" />
     <MESSAGE value="AS-939&#10;delete logout" />
     <MESSAGE value="AS-939&#10;   added method closeAlert" />
-    <option name="LAST_COMMIT_MESSAGE" value="AS-939&#10;   added method closeAlert" />
+    <MESSAGE value="AS-975" />
+    <option name="LAST_COMMIT_MESSAGE" value="AS-975" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -990,7 +1010,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1598">
           <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#380#381#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#2783#2784#0" expanded="false" />
+            <element signature="e#2834#2835#0" expanded="false" />
+            <element signature="e#2866#2867#0" expanded="false" />
+            <element signature="e#2912#2913#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -998,7 +1026,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2350#2351#0" expanded="false" />
+            <element signature="e#2395#2396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1085,7 +1117,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2350#2351#0" expanded="false" />
+            <element signature="e#2395#2396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,14 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="56" column="123" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/CreateLeadFromMainPageAndRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="77" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -1201,7 +1229,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1598">
           <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#380#381#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#2783#2784#0" expanded="false" />
+            <element signature="e#2834#2835#0" expanded="false" />
+            <element signature="e#2866#2867#0" expanded="false" />
+            <element signature="e#2912#2913#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1209,19 +1245,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2350#2351#0" expanded="false" />
+            <element signature="e#2395#2396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/Toroption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/AccountPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1251,7 +1283,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/WebDriverFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="26" column="65" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="65" />
+          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
           <folding>
             <element signature="e#2542#2558#0" expanded="true" />
             <element signature="e#2681#2697#0" expanded="true" />
@@ -1259,18 +1291,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/UIMapping.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/Toroption.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+        <state relative-caret-position="391">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/CreateLeadFromMainPageAndRegistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="77" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/toroption/pre/tests/Mobile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/AccountTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1345#1346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/UIMapping.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="66" column="56" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
           <folding />
         </state>
       </provider>
