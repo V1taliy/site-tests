@@ -10,7 +10,7 @@ import utils.WebDriverWrapper;
 public class OpenAccount extends AbstractPage {
 
     private static final Logger log = Logger.getLogger(OpenAccount.class);
-    public OpenAccount(WebDriverWrapper driverWrapper){
+    OpenAccount(WebDriverWrapper driverWrapper){
         super(driverWrapper);
     }
 
@@ -48,7 +48,7 @@ public class OpenAccount extends AbstractPage {
             web.clickElement("registrationButton");
         } catch (NoSuchElementException e) {
             e.printStackTrace();
-            log.error(String.format("EXCEPTION < %s >", e.getStackTrace()));
+            log.error(String.format("EXCEPTION < %s >", (Object) e.getStackTrace()));
         }
     }
     private void isBeCleaned(String clearLocator) {
@@ -63,10 +63,10 @@ public class OpenAccount extends AbstractPage {
     public boolean isAlertPresent() throws NoSuchElementException {
         WebElement alertSuccess = driverWrapper.findElement(By.xpath(".//div[2][@id='error-form']/p/div"));
         if (alertSuccess.isDisplayed()) {
-            log.info(String.format("Pop-up 'Error' not present on page."));
+            log.info("Pop-up 'Error' not present on page.");
             return false;
         }else {
-            log.info(String.format("Pop-up 'Error' is present on page."));
+            log.info("Pop-up 'Error' is present on page.");
             return true;
         }
     }
@@ -92,11 +92,7 @@ public class OpenAccount extends AbstractPage {
         web.waitForElementPresent("bankingHistoryInfo");
     }
     public boolean bankingHistoryIsDisplayed() {
-        if (web.isElementPresent("bankingHistoryInfo")) {
-            return true;
-        }else {
-            return false;
-        }
+        return web.isElementPresent("bankingHistoryInfo");
     }
     public void withdrawal() {
         web.waitElementToBeClickable("withdrawalBtn");
@@ -104,11 +100,7 @@ public class OpenAccount extends AbstractPage {
         web.waitForElementPresent("withdrawalInfo");
     }
     public boolean withdrawalIsDisplayed() {
-        if (web.isElementPresent("withdrawalInfo")) {
-            return true;
-        }else {
-            return false;
-        }
+        return web.isElementPresent("withdrawalInfo");
     }
     public void positions() {
         web.waitElementToBeClickable("positionsBtn");
@@ -116,11 +108,7 @@ public class OpenAccount extends AbstractPage {
         web.waitForElementPresent("positionsInfo");
     }
     public boolean positionsIsDisplayed() {
-        if (web.isElementPresent("positionsInfo")) {
-            return true;
-        }else {
-            return false;
-        }
+        return web.isElementPresent("positionsInfo");
     }
 
 }

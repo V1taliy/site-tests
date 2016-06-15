@@ -7,7 +7,7 @@ import utils.WebDriverWrapper;
 public class ContactUS extends AbstractPage {
     private static final Logger log = Logger.getLogger(MainPage.class);
 
-    public ContactUS(WebDriverWrapper driverWrapper) {
+    ContactUS(WebDriverWrapper driverWrapper) {
         super(driverWrapper);
     }
     public void clickContactUs() {
@@ -38,28 +38,20 @@ public class ContactUS extends AbstractPage {
 
     public boolean isContactUsPresent() {
 
-        if (web.isElementPresent("contactUsInfo")) {
-            return true;
-        }else {
-            return false;
-        }
+        return web.isElementPresent("contactUsInfo");
     }
     public boolean isRegisterFormPresent() {
 
-        if (web.isElementPresent("registerForm")) {
-            return true;
-        }else {
-            return false;
-        }
+        return web.isElementPresent("registerForm");
     }
 
     public boolean isAlertPresent() throws NoSuchElementException {
         WebElement alertSuccess = driverWrapper.findElement(By.xpath(".//div[2][@id='error-form']/h3[contains(.,'Success')]"));
        if (alertSuccess.isDisplayed()) {
-           log.info(String.format("Pop-up 'Success' not present on page."));
+           log.info("Pop-up 'Success' not present on page.");
            return false;
        }else {
-           log.info(String.format("Pop-up 'Success' is present on page."));
+           log.info("Pop-up 'Success' is present on page.");
            return true;
        }
     }

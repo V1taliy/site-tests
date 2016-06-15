@@ -1,10 +1,8 @@
 package com.toroption.pre.tests;
 
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
-
 
 public class LoginAndTryToTrade extends Fixture {
 
@@ -14,7 +12,6 @@ public class LoginAndTryToTrade extends Fixture {
     @Test(priority = 1)
     public void logIn() {
         toroption.mainPage.openPage();
-//        toroption.mainPage.refreshPage();
         toroption.mainPage.isTradeSpotPresent();
         toroption.mainPage.clickAndInputLoginField(EMAIL);
         toroption.mainPage.clickAndInputPassField(PASS);

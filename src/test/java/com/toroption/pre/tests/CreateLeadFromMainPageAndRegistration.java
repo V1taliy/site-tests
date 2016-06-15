@@ -39,7 +39,6 @@ public class CreateLeadFromMainPageAndRegistration extends Fixture {
         toroption.openAccount.clickAndInputCaptchaField(CAPTCHA);
         toroption.openAccount.clickLoginButton();
         Assert.assertTrue(toroption.mainPage.isUserLogIn());
-        Assert.assertTrue(toroption.mainPage.isTradeSpotForLoggedInUserPresent());
         toroption.mainPage.logout();
     }
 }

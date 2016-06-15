@@ -2,15 +2,11 @@ package utils;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
@@ -23,13 +19,13 @@ public class WebDriverWrapper implements WebDriver, TakesScreenshot {
      * public constructor
      */
     public WebDriverWrapper(WebDriver driver) {
-        this.driver = driver;
+        WebDriverWrapper.driver = driver;
     }
 
     /**
      * this method return original driver
      */
-    public WebDriver getOriginalDriver() {
+    WebDriver getOriginalDriver() {
         return driver;
     }
 

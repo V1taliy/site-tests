@@ -16,9 +16,9 @@ import java.util.concurrent.TimeUnit;
 
 public class Fixture {
 
-    public static final String impWait = PropertyLoader.loadProperty("wait.timeout");
+    private static final String impWait = PropertyLoader.loadProperty("wait.timeout");
     private static final Logger log = Logger.getLogger(Fixture.class);
-    public static WebDriverWrapper driverWrapper;
+    static WebDriverWrapper driverWrapper;
     public static Toroption toroption;
 
     @BeforeSuite
@@ -31,7 +31,7 @@ public class Fixture {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        log.info(String.format("start test suit execution"));
+        log.info("start test suit execution");
     }
 
     @AfterSuite
@@ -39,14 +39,14 @@ public class Fixture {
         if (driverWrapper != null) {
             driverWrapper.quit();
         }
-        log.info(String.format("tests suite execution completed"));
+        log.info("tests suite execution completed");
     }
 
     @AfterMethod
     public void TearDown(ITestResult result) throws IOException {
         log.info(String.format("test status is < %s >", result.getStatus()));
-        log.info(String.format("iresult status is < %s >", result.FAILURE));
-        if (result.FAILURE == result.getStatus()) {
+        log.info(String.format("iresult status is < %s >", ITestResult.FAILURE));
+        if (ITestResult.FAILURE == result.getStatus()) {
             ScreensShotMaker.takeScreenShot(driverWrapper, result.getName());
         }
     }

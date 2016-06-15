@@ -1,6 +1,5 @@
 package com.toroption.pre.tests;
 
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

@@ -5,7 +5,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.PropertyLoader;
 
-
 public class RegistrationEmailWhichUsed extends Fixture{
     private static final String NAME = PropertyLoader.loadProperty("firstName");
     private static final String SURNAME = PropertyLoader.loadProperty("lastName");

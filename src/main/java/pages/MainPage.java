@@ -17,7 +17,7 @@ public class MainPage extends AbstractPage {
     private static final String MAIN_PAGE = PropertyLoader.loadProperty("site.url");
 
 
-    public MainPage(WebDriverWrapper driverWrapper) {
+    MainPage(WebDriverWrapper driverWrapper) {
         super(driverWrapper, MAIN_PAGE);
         openPage();
     }
@@ -81,15 +81,11 @@ public class MainPage extends AbstractPage {
             web.clickElement("joinBtn");
         } catch (NoSuchElementException e) {
             e.printStackTrace();
-            log.error(String.format("EXCEPTION < %s >", e.getStackTrace()));
+            log.error(String.format("EXCEPTION < %s >", (Object) e.getStackTrace()));
         }
     }
     public boolean isOpenAccountFormPresent() {
-        if (web.isElementPresent("openAccountForm")) {
-            return true;
-        } else {
-            return false;
-        }
+        return web.isElementPresent("openAccountForm");
     }
 
 
@@ -119,12 +115,12 @@ public class MainPage extends AbstractPage {
             web.clickElement("loginButton");
         } catch (NoSuchElementException e) {
             e.printStackTrace();
-            log.error(String.format("EXCEPTION < %s >", e.getStackTrace()));
+            log.error(String.format("EXCEPTION < %s >", (Object) e.getStackTrace()));
         }
     }
     public boolean isUserLogIn() {
         if (web.isElementPresent("userIsLogIn")) {
-            log.info(String.format("user success input."));
+            log.info("user success input.");
             return true;
         } else {
             return false;
@@ -150,19 +146,11 @@ public class MainPage extends AbstractPage {
      */
     public boolean isTradeSpotPresent() {
         web.moveToElement("tradePlatform");
-        if (web.isElementPresent("tradePlatform")) {
-            return true;
-        }else {
-            return false;
-        }
+        return web.isElementPresent("tradePlatform");
     }
     public boolean isTradeSpotForLoggedInUserPresent() {
         web.moveToElement("tradePlatformForLoggedInUser");
-        if (web.waitForElementPresent("tradePlatformForLoggedInUser")) {
-            return true;
-        }else {
-            return false;
-        }
+        return web.waitForElementPresent("tradePlatformForLoggedInUser");
     }
 
     public void pushCallBtn() {

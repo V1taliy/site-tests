@@ -12,8 +12,7 @@ public class ScreensShotMaker {
 
     public static void takeScreenShot(WebDriverWrapper driverWrapper, String screenShotName)
             throws IOException {
-        TakesScreenshot takesScreenshot = (TakesScreenshot) driverWrapper;
-        File source  = takesScreenshot.getScreenshotAs(OutputType.FILE);
+        File source  = driverWrapper.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(source, new File("./target/Screenshots/" + screenShotName + ".jpg"));
         log.info("screenshot taken successfully!");
     }

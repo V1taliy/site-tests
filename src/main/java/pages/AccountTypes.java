@@ -2,9 +2,8 @@ package pages;
 
 import utils.WebDriverWrapper;
 
-
 public class AccountTypes extends AbstractPage {
-    public AccountTypes (WebDriverWrapper driverWrapper){
+    AccountTypes(WebDriverWrapper driverWrapper){
         super(driverWrapper);
     }
     public void clickAccountTypesMob() {
@@ -13,51 +12,31 @@ public class AccountTypes extends AbstractPage {
         web.moveToElementAndClick("accountTypesMob", "accountTypesMob");
     }
     public boolean isMiniAccContentPresent() {
-        if (web.isElementPresent("miniAccContent")){
-            return true;
-        }else {
-            return false;
-        }
+        return web.isElementPresent("miniAccContent");
     }
     public void clickStandardAccount() {
         web.moveToElementAndClick("standardAccount", "standardAccount");
     }
     public boolean isStandardAccContentPresent() {
-        if (web.isElementPresent("standardAccContent")) {
-            return true;
-        } else {
-            return false;
-        }
+        return web.isElementPresent("standardAccContent");
     }
     public void clickExecutiveAccount() {
         web.moveToElementAndClick("executiveAccount", "executiveAccount");
     }
     public boolean isExecutiveAccContentPresent() {
-        if (web.isElementPresent("executiveAccContent")) {
-            return true;
-        } else {
-            return false;
-        }
+        return web.isElementPresent("executiveAccContent");
     }
     public void clickVipAccount() {
         web.moveToElementAndClick("vipAccount", "vipAccount");
     }
     public boolean isVipAccContentPresent() {
-        if (web.isElementPresent("vipAccContent")) {
-            return true;
-        } else {
-            return false;
-        }
+        return web.isElementPresent("vipAccContent");
     }
     public void clickAccountTypesDesktop() throws InterruptedException {
         web.moveToElementAndClick("accounts", "accountTypes");
     }
     public boolean isAccountTypesContentDesktopPresent() {
-        if (web.isElementPresent("accountTypesContent")){
-            return true;
-        }else {
-            return false;
-        }
+        return web.isElementPresent("accountTypesContent");
     }
 
 }

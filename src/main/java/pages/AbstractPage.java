@@ -20,7 +20,7 @@ public abstract class AbstractPage {
      * @param driverWrapper the driverWrapper that is used on the page
      * @param page          the page URL
      */
-    public AbstractPage(WebDriverWrapper driverWrapper, String page) {
+    AbstractPage(WebDriverWrapper driverWrapper, String page) {
         this.driverWrapper = driverWrapper;
         this.page = page;
         web = new WebElementsActions(driverWrapper);
@@ -31,7 +31,7 @@ public abstract class AbstractPage {
      *
      * @param driverWrapper the driverWrapper that is used on the page
      */
-    public AbstractPage(WebDriverWrapper driverWrapper) {
+    AbstractPage(WebDriverWrapper driverWrapper) {
         this.driverWrapper = driverWrapper;
         web = new WebElementsActions(driverWrapper);
     }
@@ -48,7 +48,7 @@ public abstract class AbstractPage {
             driverWrapper.get(page);
             driverWrapper.getCurrentUrl();
         } catch (NoSuchElementException e) {
-            log.error(String.format("Exception < %s >", e.getStackTrace()));
+            log.error(String.format("Exception < %s >", (Object) e.getStackTrace()));
             return false;
         }
         log.info("page open successful");
@@ -73,7 +73,7 @@ public abstract class AbstractPage {
             }
         } catch (NoSuchElementException e) {
             e.printStackTrace();
-            log.error(String.format("Exception < %s >", e.getStackTrace()));
+            log.error(String.format("Exception < %s >", (Object) e.getStackTrace()));
         }
         return false;
     }
